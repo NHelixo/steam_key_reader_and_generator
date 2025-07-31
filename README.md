@@ -15,7 +15,7 @@ Install required packages with:
 pip install pytesseract Pillow
 
 📁 Project Structure
-File/Folder	Description
+File/Folder Description
 generator.py    Generates random product keys and appends them to key_list.
 reader.py       Reads and extracts keys from text (used_keys_trash) or images.
 key_list        Stores all generated product keys.
