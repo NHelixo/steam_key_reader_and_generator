@@ -3,7 +3,7 @@
 A simple Python tool for generating and reading product keys from **text** or **images** using OCR (Optical Character Recognition) via **Tesseract**.
 
 ---
-
+```bash
 ## 📦 Requirements
 
 ### Tesseract OCR  
@@ -14,7 +14,6 @@ https://github.com/UB-Mannheim/tesseract/wiki
 Install required packages with:
 pip install pytesseract Pillow
 
-```bash
 📁 Project Structure
 File/Folder	Description
 generator.py	Generates random product keys and appends them to key_list.
