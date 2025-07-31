@@ -12,11 +12,11 @@ def image_string():
         for filename in os.listdir(image_folder):
             if filename.lower().endswith((".png", ".jpg", ".jpeg", ".bmp", ".tiff")):
                 image_path = os.path.join(image_folder, filename)
-                print(f"Обробка: {image_path}")
+                print(f"Processing: {image_path}")
                 text = pytesseract.image_to_string(Image.open(image_path), lang='eng')
                 data += text + "\n"
     except FileNotFoundError:
-        print(f"Папка '{image_folder}' не знайдена!")
+        print(f"Folder '{image_folder}' not found!")
         return data
     return data
 
@@ -39,14 +39,14 @@ def load_used_keys(filename):
     keys = re.findall(pattern, data.upper())
     return keys
 
-option = input("1 - Записати ключі з тексту\n2 - Записати ключі з фото\n")
+option = input("1 - Read from text\n2 - Read from images inside\n")
 
 if option == "1":
     keys_option = load_used_keys("used_keys_trash")
 elif option == "2":
     keys_option = load_used_keys("")
 else:
-    print("Такої опції не існує!")
+    print("Such an option does not exist!")
     exit()
 
 if not keys_option:
@@ -59,7 +59,7 @@ keys.sort()
 
 keys_u = load_used_keys("used_keys")
 
-print(f"Знайдено унікальних ключів: {len(keys) - len(keys_u)}")
+print(f"Unique keys found: {len(keys) - len(keys_u)}")
 
 with open("used_keys", "w", encoding="utf-8") as f:
     for key in keys:
@@ -72,4 +72,4 @@ for filename in os.listdir(image_folder):
     if os.path.isfile(file_path):
         os.remove(file_path)
 
-print("✅ Всі файли з папки видалені")
+print("✅ All files from the folder have been deleted")

@@ -1,7 +1,7 @@
 from random import choice
 import string
 
-keys_num = int(input("Кількість ключів: "))
+keys_num = int(input("Number of keys: "))
 
 def load_keys():
     try:
@@ -36,8 +36,7 @@ def generator(keys_num, keys):
                 break
 
     save_keys(keys)
-    print(f"Згенеровані ключі:\n{keys}")
-
+    print(f"Generated keys:\n{keys}")
 
 keys = load_keys()
 generator(keys_num, keys)
