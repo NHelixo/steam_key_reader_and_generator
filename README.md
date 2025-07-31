@@ -27,7 +27,7 @@ File/Folder Description
 Run the generator script:  
 python generator.py  
 
-🧾 Read Keys from Text or Images  
+🧾 Read Keys from Text or Images
 Run the reader script:  
 
 python reader.py  
