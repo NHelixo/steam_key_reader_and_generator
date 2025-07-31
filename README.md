@@ -3,7 +3,6 @@
 A simple Python tool for generating and reading product keys from **text** or **images** using OCR (Optical Character Recognition) via **Tesseract**.
 
 ---
-```bash
 ## 📦 Requirements
 
 ### Tesseract OCR  
