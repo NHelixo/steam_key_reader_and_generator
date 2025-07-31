@@ -23,12 +23,13 @@ File/Folder Description
 - image/ - Folder for placing images containing keys to be recognized.  
 
 📌 Usage  
+
 ▶️ Generate Keys  
 Run the generator script:  
 python generator.py  
 
 🧾 Read Keys from Text or Images
-Run the reader script:  
+Run the reader script:
 
 python reader.py  
 You’ll be prompted to choose an option:  
