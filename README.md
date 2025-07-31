@@ -12,9 +12,9 @@ https://github.com/UB-Mannheim/tesseract/wiki
 
 ### Python Libraries  
 Install required packages with:
+pip install pytesseract Pillow
 
 ```bash
-pip install pytesseract Pillow
 📁 Project Structure
 File/Folder	Description
 generator.py	Generates random product keys and appends them to key_list.
